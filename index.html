@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy – LinkedIn Job Auto-Opener</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: #f9fafb;
+      color: #1a1a1a;
+      line-height: 1.7;
+    }
+
+    header {
+      background: #0a66c2;
+      color: #fff;
+      padding: 48px 24px 40px;
+      text-align: center;
+    }
+    header h1 { font-size: 1.75rem; font-weight: 700; margin-bottom: 6px; }
+    header p  { font-size: 0.95rem; opacity: 0.85; }
+
+    main {
+      max-width: 760px;
+      margin: 48px auto;
+      padding: 0 24px 80px;
+    }
+
+    section { margin-bottom: 40px; }
+
+    h2 {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: #0a66c2;
+      margin-bottom: 10px;
+      padding-bottom: 6px;
+      border-bottom: 2px solid #e5e7eb;
+    }
+
+    p { margin-bottom: 12px; }
+    p:last-child { margin-bottom: 0; }
+
+    ul {
+      margin: 10px 0 12px 20px;
+    }
+    ul li { margin-bottom: 6px; }
+
+    .badge {
+      display: inline-block;
+      background: #e8f0fe;
+      color: #1a56db;
+      font-size: 0.78rem;
+      font-weight: 600;
+      padding: 2px 8px;
+      border-radius: 4px;
+      margin-right: 4px;
+      vertical-align: middle;
+    }
+
+    .callout {
+      background: #f0f9ff;
+      border-left: 4px solid #0a66c2;
+      border-radius: 4px;
+      padding: 14px 18px;
+      margin: 16px 0;
+      font-size: 0.95rem;
+    }
+
+    a { color: #0a66c2; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    footer {
+      text-align: center;
+      font-size: 0.82rem;
+      color: #6b7280;
+      padding: 24px;
+      border-top: 1px solid #e5e7eb;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Privacy Policy</h1>
+  <p>LinkedIn Job Auto-Opener &nbsp;·&nbsp; Chrome Extension</p>
+</header>
+
+<main>
+
+  <section>
+    <h2>Overview</h2>
+    <p>
+      LinkedIn Job Auto-Opener ("the extension") is a Chrome browser extension that
+      automates walking LinkedIn job search results and opening matching company apply
+      pages in background tabs. This Privacy Policy explains what information the
+      extension collects, how it is used, and your rights regarding that information.
+    </p>
+    <p>
+      By signing in and using the extension, you agree to the practices described here.
+    </p>
+  </section>
+
+  <section>
+    <h2>Information We Collect</h2>
+
+    <p><span class="badge">Account data</span></p>
+    <p>
+      When you sign in, we collect your <strong>email address</strong> through Firebase
+      Authentication (Google). This is used solely to verify your identity and check
+      whether your account has been approved to use the extension.
+    </p>
+
+    <p><span class="badge">Usage data</span></p>
+    <p>
+      Each time you start a job search run, the extension records a usage event in
+      Firebase Firestore. This includes:
+    </p>
+    <ul>
+      <li>Your user ID (derived from your Firebase account)</li>
+      <li>The date of the run</li>
+      <li>A count of how many job searches you initiated that day</li>
+    </ul>
+    <p>
+      This data is used exclusively to enforce per-user daily usage limits set by the
+      administrator. It is not used for advertising, profiling, or any other purpose.
+    </p>
+
+    <p><span class="badge">Local data (on your device only)</span></p>
+    <p>
+      The following information is stored locally in your browser using
+      <code>chrome.storage.local</code> and <strong>never leaves your device</strong>:
+    </p>
+    <ul>
+      <li>Your filter settings and named profiles</li>
+      <li>The run state (opened / scanned / skipped counts)</li>
+      <li>A history of LinkedIn job IDs you have previously opened (to avoid duplicates)</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Information We Do Not Collect</h2>
+    <div class="callout">
+      The extension does <strong>not</strong> collect, transmit, or store:
+      <ul style="margin-top:8px">
+        <li>Your browsing history outside of LinkedIn job pages</li>
+        <li>The content of job descriptions or any LinkedIn page content</li>
+        <li>Your LinkedIn credentials or any LinkedIn account data</li>
+        <li>Financial, payment, or health information</li>
+        <li>Precise or approximate location</li>
+        <li>Any data from websites other than linkedin.com</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>How We Use Your Information</h2>
+    <ul>
+      <li><strong>Authentication</strong> – to verify you are a registered and approved user before any extension feature activates.</li>
+      <li><strong>Access control</strong> – to allow an administrator to approve, deny, or set daily limits for individual accounts.</li>
+      <li><strong>Usage limits</strong> – to enforce any daily job-search limits associated with your account.</li>
+    </ul>
+    <p>Your data is never used for advertising, analytics sold to third parties, credit assessment, or any purpose unrelated to operating the extension.</p>
+  </section>
+
+  <section>
+    <h2>Data Sharing</h2>
+    <p>
+      We do not sell, rent, trade, or otherwise share your personal information with
+      any third party. The only external service used is <strong>Firebase</strong>
+      (Google LLC), which acts as the authentication and database backend. Firebase
+      processes data under Google's privacy terms. All communication with Firebase
+      occurs over encrypted HTTPS connections.
+    </p>
+    <p>
+      For more information on how Firebase handles data, see
+      <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">
+        firebase.google.com/support/privacy
+      </a>.
+    </p>
+  </section>
+
+  <section>
+    <h2>Data Retention</h2>
+    <p>
+      Account and usage records in Firebase are retained for as long as your account
+      is active. Local data stored in your browser (settings, job history) is retained
+      until you clear it via the extension's "Clear history" button or uninstall the
+      extension.
+    </p>
+  </section>
+
+  <section>
+    <h2>Your Rights</h2>
+    <p>You may request at any time:</p>
+    <ul>
+      <li><strong>Access</strong> – a copy of the data we hold about you</li>
+      <li><strong>Deletion</strong> – removal of your account and associated usage records from Firebase</li>
+    </ul>
+    <p>
+      To exercise these rights, email us at the address below. We will respond within
+      30 days.
+    </p>
+  </section>
+
+  <section>
+    <h2>Children's Privacy</h2>
+    <p>
+      This extension is not directed at children under the age of 13. We do not
+      knowingly collect personal information from anyone under 13. If you believe a
+      child has provided us with personal information, please contact us and we will
+      delete it promptly.
+    </p>
+  </section>
+
+  <section>
+    <h2>Changes to This Policy</h2>
+    <p>
+      We may update this Privacy Policy from time to time. When we do, the "Last
+      updated" date at the bottom of this page will change. Continued use of the
+      extension after any update constitutes acceptance of the revised policy.
+    </p>
+  </section>
+
+  <section>
+    <h2>Contact</h2>
+    <p>
+      If you have any questions or requests regarding this Privacy Policy, please
+      contact us at:
+    </p>
+    <p>
+      <strong>Email:</strong>
+      <a href="mailto:contact.joblaunchpad@gmail.com">contact.joblaunchpad@gmail.com</a>
+    </p>
+  </section>
+
+</main>
+
+<footer>
+  Last updated: June 2026 &nbsp;·&nbsp; LinkedIn Job Auto-Opener
+</footer>
+
+</body>
+</html>
